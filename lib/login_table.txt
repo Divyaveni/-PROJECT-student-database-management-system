@@ -1,0 +1,14 @@
+CREATE DATABASE SDMS;
+USE SDMS;
+create table login_table
+(
+    id        int auto_increment primary key,
+    name      varchar(255) null,
+    username  varchar(255) not null,
+    password  varchar(255) not null,
+    regNo     int          null,
+    isStudent boolean   not null,
+    isAdmin   boolean   not null,
+    constraint login_table_username_uindex
+        unique (username)
+);

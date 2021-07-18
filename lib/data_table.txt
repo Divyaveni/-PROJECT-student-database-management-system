@@ -1,0 +1,14 @@
+create table data_table
+(
+    name     varchar(255)          null,
+    regNo    int                   null,
+    rollNo   int                   null,
+    year     int                   null,
+    semester int                   null,
+    email    varchar(255)          null,
+    grades   longtext charset utf8 null,
+    constraint data_table_regNo_uindex
+        unique (regNo),
+    constraint data_table_rollNo_uindex
+        unique (rollNo)
+);
